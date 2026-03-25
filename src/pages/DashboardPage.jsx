@@ -25,7 +25,7 @@ const StatCard = ({ icon: Icon, label, value, sub, color, to }) => (
 )
 
 const DashboardPage = () => {
-  const { profile } = useAuth()
+  const { user, profile } = useAuth()
   const { scores, loading: scoresLoading } = useScores()
   const { winnings } = useWinnings()
 
